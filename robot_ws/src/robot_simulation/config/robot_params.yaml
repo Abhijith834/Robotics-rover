@@ -1,0 +1,164 @@
+# Robot Parameters Configuration
+# Contains robot-specific parameters for state publishing and control
+
+robot_state_publisher:
+  ros__parameters:
+    use_sim_time: true
+    robot_description_topic: ""
+    tf_prefix: ""
+    frame_prefix: ""
+    publish_frequency: 50.0
+    ignore_timestamp: false
+    
+    # Robot physical parameters
+    robot_name: "robot"
+    base_frame_id: "base_link"
+    odom_frame_id: "odom"
+    map_frame_id: "map"
+    
+    # Joint configuration
+    joint_states_topic: "/joint_states"
+    
+    # TF publishing
+    publish_tf: true
+    use_tf_static: true
+
+joint_state_publisher:
+  ros__parameters:
+    use_sim_time: true
+    source_list: ["/joint_states"]
+    rate: 30.0
+    
+    # Joint names for the robot
+    joint_names:
+      - "chassis_front_left_wheel_joint"
+      - "chassis_front_right_wheel_joint" 
+      - "chassis_back_left_wheel_joint"
+      - "chassis_back_right_wheel_joint"
+    
+    # Default joint positions (in radians for revolute joints)
+    default_positions:
+      chassis_front_left_wheel_joint: 0.0
+      chassis_front_right_wheel_joint: 0.0
+      chassis_back_left_wheel_joint: 0.0
+      chassis_back_right_wheel_joint: 0.0
+
+# Differential drive controller parameters
+diff_drive_controller:
+  ros__parameters:
+    use_sim_time: true
+    
+    # Wheel parameters
+    wheel_separation: 0.7  # Distance between wheels in meters
+    wheel_radius: 0.5      # Wheel radius in meters
+    
+    # Speed limits
+    linear_velocity_limit: 2.0   # m/s
+    angular_velocity_limit: 1.5  # rad/s
+    
+    # Control parameters
+    cmd_vel_timeout: 0.5  # seconds
+    publish_rate: 50.0    # Hz
+    
+    # Odometry parameters
+    publish_odom: true
+    publish_odom_tf: true
+    odom_frame_id: "odom"
+    base_frame_id: "base_link"
+    odom_topic: "/odom"
+    
+    # Covariance values for odometry
+    pose_covariance_diagonal: [0.001, 0.001, 0.001, 0.001, 0.001, 0.03]
+    twist_covariance_diagonal: [0.001, 0.001, 0.001, 0.001, 0.001, 0.03]
+
+# Sensor parameters
+lidar_front:
+  ros__parameters:
+    use_sim_time: true
+    frame_id: "lidar_front_link"
+    topic_name: "/lidar_front/scan"
+    min_range: 0.08
+    max_range: 10.0
+    min_angle: -1.6  # radians
+    max_angle: 1.6   # radians
+    samples: 640
+    update_rate: 10.0
+
+lidar_back:
+  ros__parameters:
+    use_sim_time: true
+    frame_id: "lidar_back_link"
+    topic_name: "/lidar_back/scan"
+    min_range: 0.08
+    max_range: 10.0
+    min_angle: -1.6  # radians
+    max_angle: 1.6   # radians
+    samples: 640
+    update_rate: 10.0
+
+camera:
+  ros__parameters:
+    use_sim_time: true
+    frame_id: "camera_link"
+    image_topic: "/camera/image_raw"
+    camera_info_topic: "/camera/camera_info"
+    width: 320
+    height: 240
+    fov: 1.67  # radians (95.7 degrees)
+    update_rate: 30.0
+    
+    # Camera intrinsics (example values)
+    camera_matrix: [160.0, 0.0, 160.0, 0.0, 160.0, 120.0, 0.0, 0.0, 1.0]
+    distortion_coefficients: [0.0, 0.0, 0.0, 0.0, 0.0]
+
+# Robot monitor parameters
+robot_monitor:
+  ros__parameters:
+    use_sim_time: true
+    update_rate: 5.0  # Hz
+    
+    # Topic monitoring
+    monitor_topics:
+      - "/lidar_front/scan"
+      - "/lidar_back/scan"
+      - "/camera/image_raw"
+      - "/odom"
+      - "/cmd_vel"
+      - "/joint_states"
+    
+    # Expected rates (Hz)
+    expected_rates:
+      "/lidar_front/scan": 10.0
+      "/lidar_back/scan": 10.0
+      "/camera/image_raw": 30.0
+      "/odom": 50.0
+      "/joint_states": 30.0
+    
+    # Safety thresholds
+    min_distance_threshold: 0.3  # meters (emergency stop)
+    max_linear_velocity: 2.0     # m/s
+    max_angular_velocity: 1.5    # rad/s
+    
+    # Diagnostic publishing
+    publish_diagnostics: true
+    diagnostics_topic: "/diagnostics"
+
+# Teleoperation parameters
+teleop_keyboard:
+  ros__parameters:
+    use_sim_time: true
+    cmd_vel_topic: "/cmd_vel"
+    
+    # Speed settings
+    linear_speed_step: 0.1   # m/s increment
+    angular_speed_step: 0.1  # rad/s increment
+    max_linear_speed: 1.0    # m/s
+    max_angular_speed: 1.0   # rad/s
+    
+    # Control settings
+    key_timeout: 0.1  # seconds
+    repeat_rate: 10.0 # Hz
+    
+    # Safety features
+    emergency_stop_enabled: true
+    safety_timeout: 0.5  # seconds

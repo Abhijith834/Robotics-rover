@@ -1,0 +1,12 @@
+/mnt/c/Users/abhij/Desktop/Robotics/robot_ws/build/robot_simulation/CMakeFiles/uninstall.dir
+/mnt/c/Users/abhij/Desktop/Robotics/robot_ws/build/robot_simulation/CMakeFiles/robot_simulation_uninstall.dir
+/mnt/c/Users/abhij/Desktop/Robotics/robot_ws/build/robot_simulation/CMakeFiles/ament_cmake_python_symlink_robot_simulation.dir
+/mnt/c/Users/abhij/Desktop/Robotics/robot_ws/build/robot_simulation/CMakeFiles/ament_cmake_python_symlink_robot_simulation_setup.dir
+/mnt/c/Users/abhij/Desktop/Robotics/robot_ws/build/robot_simulation/CMakeFiles/ament_cmake_python_build_robot_simulation_egg.dir
+/mnt/c/Users/abhij/Desktop/Robotics/robot_ws/build/robot_simulation/CMakeFiles/test.dir
+/mnt/c/Users/abhij/Desktop/Robotics/robot_ws/build/robot_simulation/CMakeFiles/edit_cache.dir
+/mnt/c/Users/abhij/Desktop/Robotics/robot_ws/build/robot_simulation/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/abhij/Desktop/Robotics/robot_ws/build/robot_simulation/CMakeFiles/list_install_components.dir
+/mnt/c/Users/abhij/Desktop/Robotics/robot_ws/build/robot_simulation/CMakeFiles/install.dir
+/mnt/c/Users/abhij/Desktop/Robotics/robot_ws/build/robot_simulation/CMakeFiles/install/local.dir
+/mnt/c/Users/abhij/Desktop/Robotics/robot_ws/build/robot_simulation/CMakeFiles/install/strip.dir

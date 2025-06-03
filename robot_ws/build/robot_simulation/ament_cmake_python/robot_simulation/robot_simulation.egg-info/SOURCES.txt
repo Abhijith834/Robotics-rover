@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+robot_simulation/__init__.py
+robot_simulation.egg-info/PKG-INFO
+robot_simulation.egg-info/SOURCES.txt
+robot_simulation.egg-info/dependency_links.txt
+robot_simulation.egg-info/top_level.txt
