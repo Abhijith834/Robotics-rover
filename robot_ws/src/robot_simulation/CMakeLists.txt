@@ -5,7 +5,8 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
-# Find dependencies
+# Find dependencies - only CMake packages that provide config files
+find_package(ament_cmake REQUIRED)
 find_package(ament_cmake_python REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(rclpy REQUIRED)
@@ -14,16 +15,9 @@ find_package(geometry_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
 find_package(tf2_ros REQUIRED)
-find_package(ros_gz_bridge REQUIRED)
-find_package(diagnostic_msgs REQUIRED)
-find_package(ament_cmake REQUIRED COMPONENTS
-  diagnostic_updater  # ✅ Correct
-)
 
-
-# Install Python modules
-ament_python_install_package(robot_simulation)
-
+# Install Python package
+ament_python_install_package(${PROJECT_NAME})
 
 # Install Python scripts
 install(PROGRAMS
@@ -33,29 +27,36 @@ install(PROGRAMS
 )
 
 # Install launch files
-install(DIRECTORY launch/
-  DESTINATION share/${PROJECT_NAME}/launch
-  FILES_MATCHING PATTERN "*.launch.py"
+install(DIRECTORY
+  launch
+  DESTINATION share/${PROJECT_NAME}/
 )
 
 # Install config files
-install(DIRECTORY config/
-  DESTINATION share/${PROJECT_NAME}/config
-  FILES_MATCHING PATTERN "*.yaml"
+install(DIRECTORY
+  config
+  DESTINATION share/${PROJECT_NAME}/
 )
 
 # Install world files
-install(DIRECTORY worlds/
-  DESTINATION share/${PROJECT_NAME}/worlds
-  FILES_MATCHING PATTERN "*.sdf"
+install(DIRECTORY
+  worlds
+  DESTINATION share/${PROJECT_NAME}/
 )
 
-# Install robot model files
-install(DIRECTORY models/
-  DESTINATION share/${PROJECT_NAME}/models
+# Install model files
+install(DIRECTORY
+  models
+  DESTINATION share/${PROJECT_NAME}/
 )
 
-# Install package files
+# Install resource files
+install(FILES
+  resource/${PROJECT_NAME}
+  DESTINATION share/ament_index/resource_index/packages
+)
+
+# Install package.xml
 install(FILES
   package.xml
   DESTINATION share/${PROJECT_NAME}

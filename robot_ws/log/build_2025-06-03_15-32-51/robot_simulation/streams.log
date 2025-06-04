@@ -1,0 +1,99 @@
+[0.109s] Invoking command in '/mnt/c/Users/abhij/Desktop/Robotics/robot_ws/build/robot_simulation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/src/robot_simulation -DCMAKE_INSTALL_PREFIX=/mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation
+[0.188s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.769s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.842s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[1.033s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.034s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.038s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.049s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.062s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.091s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.097s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[8.375s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[8.406s] -- Found rclpy: 3.3.16 (/opt/ros/humble/share/rclpy/cmake)
+[8.407s] -- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[8.415s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[8.426s] -- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[8.436s] -- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)
+[8.967s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[9.524s] -- Added test 'copyright' to check source files copyright and LICENSE
+[11.788s] -- Added test 'flake8' to check Python code syntax and style conventions
+[12.057s] -- Added test 'lint_cmake' to check CMake code style
+[12.190s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[13.408s] -- Added test 'xmllint' to check XML markup files
+[13.494s] -- Configuring done
+[13.907s] -- Generating done
+[14.167s] -- Build files have been written to: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/build/robot_simulation
+[14.176s] Invoked command in '/mnt/c/Users/abhij/Desktop/Robotics/robot_ws/build/robot_simulation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/src/robot_simulation -DCMAKE_INSTALL_PREFIX=/mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation
+[14.188s] Invoking command in '/mnt/c/Users/abhij/Desktop/Robotics/robot_ws/build/robot_simulation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/build/robot_simulation -- -j32 -l32
+[14.203s] gmake: Warning: File 'Makefile' has modification time 0.35 s in the future
+[14.293s] gmake[1]: Warning: File 'CMakeFiles/Makefile2' has modification time 0.41 s in the future
+[14.303s] gmake[2]: Warning: File 'CMakeFiles/ament_cmake_python_symlink_robot_simulation_setup.dir/progress.make' has modification time 0.35 s in the future
+[14.304s] gmake[2]: Warning: File 'CMakeFiles/ament_cmake_python_symlink_robot_simulation.dir/progress.make' has modification time 0.34 s in the future
+[14.321s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[14.322s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[14.332s] gmake[2]: Warning: File 'CMakeFiles/ament_cmake_python_symlink_robot_simulation_setup.dir/progress.make' has modification time 0.32 s in the future
+[14.333s] gmake[2]: Warning: File 'CMakeFiles/ament_cmake_python_symlink_robot_simulation.dir/progress.make' has modification time 0.31 s in the future
+[14.351s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[14.352s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[14.360s] Built target ament_cmake_python_symlink_robot_simulation
+[14.360s] Built target ament_cmake_python_symlink_robot_simulation_setup
+[14.371s] gmake[2]: Warning: File 'CMakeFiles/ament_cmake_python_build_robot_simulation_egg.dir/progress.make' has modification time 0.26 s in the future
+[14.391s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[14.401s] gmake[2]: Warning: File 'CMakeFiles/ament_cmake_python_build_robot_simulation_egg.dir/progress.make' has modification time 0.23 s in the future
+[15.145s] running egg_info
+[15.147s] writing robot_simulation.egg-info/PKG-INFO
+[15.152s] writing dependency_links to robot_simulation.egg-info/dependency_links.txt
+[15.159s] writing top-level names to robot_simulation.egg-info/top_level.txt
+[15.196s] reading manifest file 'robot_simulation.egg-info/SOURCES.txt'
+[15.236s] writing manifest file 'robot_simulation.egg-info/SOURCES.txt'
+[15.254s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[15.262s] Built target ament_cmake_python_build_robot_simulation_egg
+[15.263s] gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+[15.273s] gmake: warning:  Clock skew detected.  Your build may be incomplete.
+[15.275s] Invoked command in '/mnt/c/Users/abhij/Desktop/Robotics/robot_ws/build/robot_simulation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/build/robot_simulation -- -j32 -l32
+[15.309s] Invoking command in '/mnt/c/Users/abhij/Desktop/Robotics/robot_ws/build/robot_simulation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/build/robot_simulation
+[15.319s] -- Install configuration: ""
+[15.331s] -- Execute custom install script
+[15.361s] -- Up-to-date symlink: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/robot_simulation/environment/pythonpath.sh
+[15.392s] -- Up-to-date symlink: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/robot_simulation/environment/pythonpath.dsv
+[15.470s] -- Up-to-date symlink: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/local/lib/python3.10/dist-packages/robot_simulation-0.0.0-py3.10.egg-info/PKG-INFO
+[15.519s] -- Up-to-date symlink: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/local/lib/python3.10/dist-packages/robot_simulation-0.0.0-py3.10.egg-info/SOURCES.txt
+[15.568s] -- Up-to-date symlink: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/local/lib/python3.10/dist-packages/robot_simulation-0.0.0-py3.10.egg-info/dependency_links.txt
+[15.619s] -- Up-to-date symlink: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/local/lib/python3.10/dist-packages/robot_simulation-0.0.0-py3.10.egg-info/top_level.txt
+[15.701s] -- Up-to-date symlink: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/local/lib/python3.10/dist-packages/robot_simulation/__init__.py
+[15.735s] -- Up-to-date symlink: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/lib/robot_simulation/teleop_keyboard.py
+[15.767s] -- Up-to-date symlink: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/lib/robot_simulation/robot_monitor.py
+[15.828s] -- Up-to-date symlink: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/robot_simulation//launch/bridge_only.launch.py
+[15.865s] -- Up-to-date symlink: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/robot_simulation//launch/robot_simulation.launch.py
+[15.903s] -- Up-to-date symlink: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/robot_simulation//launch/robot_spawn.launch.py
+[15.959s] -- Up-to-date symlink: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/robot_simulation//config/bridge_config.yaml
+[15.998s] -- Up-to-date symlink: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/robot_simulation//config/robot_params.yaml
+[16.049s] -- Up-to-date symlink: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/robot_simulation//worlds/test_world.sdf
+[16.126s] -- Up-to-date symlink: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/robot_simulation//models/robot/model.config
+[16.174s] -- Up-to-date symlink: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/robot_simulation//models/robot/model.sdf
+[16.227s] -- Symlinking: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/ament_index/resource_index/packages/robot_simulation
+[16.309s] -- Up-to-date symlink: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/robot_simulation/package.xml
+[16.369s] -- Up-to-date symlink: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/ament_index/resource_index/package_run_dependencies/robot_simulation
+[16.429s] -- Up-to-date symlink: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/ament_index/resource_index/parent_prefix_path/robot_simulation
+[16.454s] -- Up-to-date symlink: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/robot_simulation/environment/ament_prefix_path.sh
+[16.485s] -- Up-to-date symlink: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/robot_simulation/environment/ament_prefix_path.dsv
+[16.509s] -- Up-to-date symlink: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/robot_simulation/environment/path.sh
+[16.538s] -- Up-to-date symlink: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/robot_simulation/environment/path.dsv
+[16.563s] -- Up-to-date symlink: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/robot_simulation/local_setup.bash
+[16.589s] -- Up-to-date symlink: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/robot_simulation/local_setup.sh
+[16.613s] -- Up-to-date symlink: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/robot_simulation/local_setup.zsh
+[16.638s] -- Up-to-date symlink: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/robot_simulation/local_setup.dsv
+[16.650s] -- Symlinking: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/robot_simulation/package.dsv
+[16.737s] -- Symlinking: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/ament_index/resource_index/packages/robot_simulation
+[16.824s] -- Up-to-date symlink: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/robot_simulation/cmake/robot_simulationConfig.cmake
+[16.852s] -- Up-to-date symlink: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/robot_simulation/cmake/robot_simulationConfig-version.cmake
+[16.882s] -- Up-to-date symlink: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/robot_simulation/package.xml
+[17.175s] Listing '/mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/local/lib/python3.10/dist-packages/robot_simulation'...
+[17.176s] Compiling '/mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/local/lib/python3.10/dist-packages/robot_simulation/__init__.py'...
+[17.176s] ***   File "/mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/local/lib/python3.10/dist-packages/robot_simulation/__init__.py", line 1
+[17.177s]     echo '"""Robot simulation package for dual LiDAR robot with camera."""
+[17.178s]          ^
+[17.178s] SyntaxError: unterminated string literal (detected at line 1)
+[17.179s] 
+[17.185s] Invoked command in '/mnt/c/Users/abhij/Desktop/Robotics/robot_ws/build/robot_simulation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/build/robot_simulation

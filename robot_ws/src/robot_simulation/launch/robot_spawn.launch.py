@@ -1,119 +1,103 @@
-#!/usr/bin/env python3
-
-"""
-Robot Spawn Launch File
-
-This launch file spawns the robot into an already running Gazebo simulation.
-Useful for multi-robot scenarios or adding robots to existing simulations.
-
-Author: Your Name
-License: Apache-2.0
-"""
+# Robot Spawn Launch File
+# This launch file handles spawning the robot into an existing simulation
 
 import os
 from launch import LaunchDescription
-from launch.actions import DeclareLaunchArgument
+from launch.actions import (
+    DeclareLaunchArgument,
+    ExecuteProcess,
+    SetEnvironmentVariable
+)
 from launch.substitutions import LaunchConfiguration
-from launch_ros.actions import Node
 from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
-    # Get package directory
+    # Package and file paths
     pkg_robot_simulation = get_package_share_directory('robot_simulation')
+    model_file_path = os.path.join(pkg_robot_simulation, 'models', 'robot', 'model.sdf')
     
-    # Declare launch arguments
-    declare_robot_name_arg = DeclareLaunchArgument(
+    # Launch arguments
+    declare_robot_name_cmd = DeclareLaunchArgument(
         'robot_name', 
         default_value='robot',
-        description='Name of the robot to spawn'
+        description='Name of the robot'
     )
     
-    declare_robot_x_arg = DeclareLaunchArgument(
-        'robot_x', 
+    declare_world_name_cmd = DeclareLaunchArgument(
+        'world_name', 
+        default_value='test_world',
+        description='Name of the world'
+    )
+    
+    declare_x_cmd = DeclareLaunchArgument(
+        'x', 
         default_value='0.0',
-        description='Initial robot X position'
+        description='X position'
     )
     
-    declare_robot_y_arg = DeclareLaunchArgument(
-        'robot_y', 
+    declare_y_cmd = DeclareLaunchArgument(
+        'y', 
         default_value='0.0',
-        description='Initial robot Y position'
+        description='Y position'
     )
     
-    declare_robot_z_arg = DeclareLaunchArgument(
-        'robot_z', 
+    declare_z_cmd = DeclareLaunchArgument(
+        'z', 
         default_value='0.5',
-        description='Initial robot Z position'
+        description='Z position'
     )
     
-    declare_robot_roll_arg = DeclareLaunchArgument(
-        'robot_roll', 
-        default_value='0.0',
-        description='Initial robot roll orientation'
+    declare_yaw_cmd = DeclareLaunchArgument(
+        'yaw', 
+        default_value='1.57',
+        description='Yaw rotation (Z-axis rotation)'
     )
     
-    declare_robot_pitch_arg = DeclareLaunchArgument(
-        'robot_pitch', 
-        default_value='0.0',
-        description='Initial robot pitch orientation'
+    # Environment setup
+    set_env_gz_resource_path = SetEnvironmentVariable(
+        name='GZ_SIM_RESOURCE_PATH',
+        value=os.pathsep.join([
+            pkg_robot_simulation,
+            os.path.join(pkg_robot_simulation, 'models')
+        ])
     )
     
-    declare_robot_yaw_arg = DeclareLaunchArgument(
-        'robot_yaw', 
-        default_value='1.5708',  # 90 degrees in radians
-        description='Initial robot yaw orientation'
-    )
-    
-    declare_model_path_arg = DeclareLaunchArgument(
-        'model_path', 
-        default_value=os.path.join(pkg_robot_simulation, 'models', 'robot', 'model.sdf'),
-        description='Path to the robot SDF model file'
-    )
-    
-    # Spawn robot in Gazebo
-    spawn_robot = Node(
-        package='ros_gz_sim',
-        executable='create',
-        name=f'spawn_{LaunchConfiguration("robot_name")}',
-        arguments=[
-            '-file', LaunchConfiguration('model_path'),
-            '-name', LaunchConfiguration('robot_name'),
-            '-x', LaunchConfiguration('robot_x'),
-            '-y', LaunchConfiguration('robot_y'),
-            '-z', LaunchConfiguration('robot_z'),
-            '-R', LaunchConfiguration('robot_roll'),
-            '-P', LaunchConfiguration('robot_pitch'),
-            '-Y', LaunchConfiguration('robot_yaw')
+    # Robot spawning
+    robot_spawn = ExecuteProcess(
+        cmd=[
+            'gz', 'service', '-s', 
+            ['/world/', LaunchConfiguration('world_name'), '/create'],
+            '--reqtype', 'gz.msgs.EntityFactory',
+            '--reptype', 'gz.msgs.Boolean',
+            '--timeout', '5000',
+            '--req', [
+                'sdf_filename: "', model_file_path, 
+                '", pose: {position: {x: ', LaunchConfiguration('x'), 
+                ', y: ', LaunchConfiguration('y'), 
+                ', z: ', LaunchConfiguration('z'), 
+                '}, orientation: {x: 0, y: 0, z: ', 
+                LaunchConfiguration('yaw'), ', w: 1}}, name: "', 
+                LaunchConfiguration('robot_name'), '"'
+            ]
         ],
         output='screen'
     )
     
-    # Robot-specific state publisher
-    robot_state_publisher = Node(
-        package='robot_state_publisher',
-        executable='robot_state_publisher',
-        name=f'{LaunchConfiguration("robot_name")}_state_publisher',
-        namespace=LaunchConfiguration('robot_name'),
-        parameters=[
-            os.path.join(pkg_robot_simulation, 'config', 'robot_params.yaml'),
-            {'use_sim_time': True,
-             'robot_description': open(os.path.join(pkg_robot_simulation, 'models', 'robot', 'model.sdf')).read()}
-        ],
-        output='screen'
-    )
+    # Create launch description
+    ld = LaunchDescription()
     
-    return LaunchDescription([
-        # Launch arguments
-        declare_robot_name_arg,
-        declare_robot_x_arg,
-        declare_robot_y_arg,
-        declare_robot_z_arg,
-        declare_robot_roll_arg,
-        declare_robot_pitch_arg,
-        declare_robot_yaw_arg,
-        declare_model_path_arg,
-        
-        # Nodes
-        spawn_robot,
-        robot_state_publisher,
-    ])
+    # Add launch arguments
+    ld.add_action(declare_robot_name_cmd)
+    ld.add_action(declare_world_name_cmd)
+    ld.add_action(declare_x_cmd)
+    ld.add_action(declare_y_cmd)
+    ld.add_action(declare_z_cmd)
+    ld.add_action(declare_yaw_cmd)
+    
+    # Environment setup
+    ld.add_action(set_env_gz_resource_path)
+    
+    # Robot spawning
+    ld.add_action(robot_spawn)
+    
+    return ld

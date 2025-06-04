@@ -1,0 +1,345 @@
+[0.000000] (-) TimerEvent: {}
+[0.000698] (robot_simulation) JobQueued: {'identifier': 'robot_simulation', 'dependencies': OrderedDict()}
+[0.000894] (robot_simulation) JobStarted: {'identifier': 'robot_simulation'}
+[0.022175] (robot_simulation) JobProgress: {'identifier': 'robot_simulation', 'progress': 'cmake'}
+[0.060048] (robot_simulation) Command: {'cmd': ['/usr/bin/cmake', '/mnt/c/Users/abhij/Desktop/Robotics/robot_ws/src/robot_simulation', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation'], 'cwd': '/mnt/c/Users/abhij/Desktop/Robotics/robot_ws/build/robot_simulation', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'abhi'), ('GIT_ASKPASS', '/home/abhi/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/abhi'), ('OLDPWD', '/mnt/c/Users/abhij/Desktop/Robotics'), ('TERM_PROGRAM_VERSION', '1.100.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-8077f13a-7cb0-4030-8f6b-4cd72b9a11e6.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/abhi/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/abhi/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'abhi'), ('NAME', 'MATRIX'), ('WSL_INTEROP', '/run/WSL/620_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/abhi/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Users/abhij/AppData/Local/Programs/Python/Python313/Scripts/:/mnt/c/Users/abhij/AppData/Local/Programs/Python/Python313/:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.6/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.6/libnvvp:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2024.3.2/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/cloudflared/:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Users/abhij/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/abhij/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/abhij/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/abhij/anaconda3:/mnt/c/Users/abhij/anaconda3/Scripts:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.x/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.x/libnvvp:/mnt/c/other/tree-1.5.2.2-bin/bin/tree.exe:/mnt/c/Users/abhij/AppData/Local/Programs/Ollama:/mnt/c/Users/abhij/AppData/Local/Programs/Ollama/ollama.exe:/mnt/c/Program Files/LibreOffice/program:/mnt/c/Program Files/JetBrains/IntelliJ IDEA 2024.3.2.2/bin:/mnt/c/other/jdk-23.0.1/bin:/mnt/c/other/ngrok-v3-stable-windows-amd64:/mnt/c/other/ffmpeg/bin:/mnt/c/Users/abhij/AppData/Roaming/npm:/mnt/c/Users/abhij/AppData/Local/Programs/cursor/resources/app/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-6e8329260e.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/mnt/c/Users/abhij/Desktop/Robotics/robot_ws/build/robot_simulation'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.097970] (-) TimerEvent: {}
+[0.198602] (-) TimerEvent: {}
+[0.299025] (-) TimerEvent: {}
+[0.399421] (-) TimerEvent: {}
+[0.499790] (-) TimerEvent: {}
+[0.525341] (robot_simulation) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.599867] (-) TimerEvent: {}
+[0.700288] (-) TimerEvent: {}
+[0.800709] (-) TimerEvent: {}
+[0.901204] (-) TimerEvent: {}
+[1.001622] (-) TimerEvent: {}
+[1.102007] (-) TimerEvent: {}
+[1.202432] (-) TimerEvent: {}
+[1.302855] (-) TimerEvent: {}
+[1.403231] (-) TimerEvent: {}
+[1.503620] (-) TimerEvent: {}
+[1.509661] (robot_simulation) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.603728] (-) TimerEvent: {}
+[1.704179] (-) TimerEvent: {}
+[1.804592] (-) TimerEvent: {}
+[1.904981] (-) TimerEvent: {}
+[2.005409] (-) TimerEvent: {}
+[2.105862] (-) TimerEvent: {}
+[2.173521] (robot_simulation) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.205954] (-) TimerEvent: {}
+[2.306388] (-) TimerEvent: {}
+[2.406789] (-) TimerEvent: {}
+[2.507168] (-) TimerEvent: {}
+[2.607524] (-) TimerEvent: {}
+[2.707917] (-) TimerEvent: {}
+[2.808304] (-) TimerEvent: {}
+[2.853862] (robot_simulation) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.880592] (robot_simulation) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.881458] (robot_simulation) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.882166] (robot_simulation) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.908421] (-) TimerEvent: {}
+[2.950413] (robot_simulation) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[3.008536] (-) TimerEvent: {}
+[3.108957] (-) TimerEvent: {}
+[3.209386] (-) TimerEvent: {}
+[3.309860] (-) TimerEvent: {}
+[3.410265] (-) TimerEvent: {}
+[3.510634] (-) TimerEvent: {}
+[3.611064] (-) TimerEvent: {}
+[3.647664] (robot_simulation) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.672451] (robot_simulation) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[3.673233] (robot_simulation) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.673844] (robot_simulation) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.711117] (-) TimerEvent: {}
+[3.734154] (robot_simulation) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[3.811214] (-) TimerEvent: {}
+[3.858865] (robot_simulation) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[3.911287] (-) TimerEvent: {}
+[3.977259] (robot_simulation) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[4.011393] (-) TimerEvent: {}
+[4.102165] (robot_simulation) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[4.111483] (-) TimerEvent: {}
+[4.211894] (-) TimerEvent: {}
+[4.312316] (-) TimerEvent: {}
+[4.339672] (robot_simulation) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[4.345088] (robot_simulation) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[4.354912] (robot_simulation) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[4.371706] (robot_simulation) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.390076] (robot_simulation) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.412406] (-) TimerEvent: {}
+[4.439195] (robot_simulation) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[4.443446] (robot_simulation) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[4.512536] (-) TimerEvent: {}
+[4.612941] (-) TimerEvent: {}
+[4.713359] (-) TimerEvent: {}
+[4.813776] (-) TimerEvent: {}
+[4.914207] (-) TimerEvent: {}
+[5.014570] (-) TimerEvent: {}
+[5.114990] (-) TimerEvent: {}
+[5.215421] (-) TimerEvent: {}
+[5.315851] (-) TimerEvent: {}
+[5.416280] (-) TimerEvent: {}
+[5.516702] (-) TimerEvent: {}
+[5.617106] (-) TimerEvent: {}
+[5.717553] (-) TimerEvent: {}
+[5.817976] (-) TimerEvent: {}
+[5.918443] (-) TimerEvent: {}
+[6.018860] (-) TimerEvent: {}
+[6.119350] (-) TimerEvent: {}
+[6.219806] (-) TimerEvent: {}
+[6.320227] (-) TimerEvent: {}
+[6.372857] (robot_simulation) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[6.420304] (-) TimerEvent: {}
+[6.520746] (-) TimerEvent: {}
+[6.621184] (-) TimerEvent: {}
+[6.721570] (-) TimerEvent: {}
+[6.822052] (-) TimerEvent: {}
+[6.922441] (-) TimerEvent: {}
+[7.022809] (-) TimerEvent: {}
+[7.123135] (-) TimerEvent: {}
+[7.223474] (-) TimerEvent: {}
+[7.323827] (-) TimerEvent: {}
+[7.424192] (-) TimerEvent: {}
+[7.524630] (-) TimerEvent: {}
+[7.624982] (-) TimerEvent: {}
+[7.725394] (-) TimerEvent: {}
+[7.825849] (-) TimerEvent: {}
+[7.926270] (-) TimerEvent: {}
+[8.026664] (-) TimerEvent: {}
+[8.127025] (-) TimerEvent: {}
+[8.227420] (-) TimerEvent: {}
+[8.327847] (-) TimerEvent: {}
+[8.428273] (-) TimerEvent: {}
+[8.460826] (robot_simulation) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[8.528387] (-) TimerEvent: {}
+[8.628786] (-) TimerEvent: {}
+[8.729200] (-) TimerEvent: {}
+[8.829651] (-) TimerEvent: {}
+[8.930105] (-) TimerEvent: {}
+[9.030493] (-) TimerEvent: {}
+[9.130937] (-) TimerEvent: {}
+[9.231421] (-) TimerEvent: {}
+[9.331846] (-) TimerEvent: {}
+[9.432242] (-) TimerEvent: {}
+[9.532649] (-) TimerEvent: {}
+[9.633073] (-) TimerEvent: {}
+[9.733680] (-) TimerEvent: {}
+[9.834131] (-) TimerEvent: {}
+[9.934516] (-) TimerEvent: {}
+[10.034925] (-) TimerEvent: {}
+[10.135366] (-) TimerEvent: {}
+[10.235796] (-) TimerEvent: {}
+[10.336195] (-) TimerEvent: {}
+[10.436591] (-) TimerEvent: {}
+[10.536971] (-) TimerEvent: {}
+[10.637415] (-) TimerEvent: {}
+[10.737830] (-) TimerEvent: {}
+[10.838272] (-) TimerEvent: {}
+[10.938710] (-) TimerEvent: {}
+[11.039075] (-) TimerEvent: {}
+[11.139461] (-) TimerEvent: {}
+[11.239840] (-) TimerEvent: {}
+[11.340299] (-) TimerEvent: {}
+[11.440662] (-) TimerEvent: {}
+[11.541058] (-) TimerEvent: {}
+[11.641479] (-) TimerEvent: {}
+[11.741900] (-) TimerEvent: {}
+[11.842397] (-) TimerEvent: {}
+[11.942758] (-) TimerEvent: {}
+[12.043118] (-) TimerEvent: {}
+[12.143464] (-) TimerEvent: {}
+[12.205609] (robot_simulation) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[12.243576] (-) TimerEvent: {}
+[12.255934] (robot_simulation) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[12.343645] (-) TimerEvent: {}
+[12.444004] (-) TimerEvent: {}
+[12.544350] (-) TimerEvent: {}
+[12.644719] (-) TimerEvent: {}
+[12.745071] (-) TimerEvent: {}
+[12.845444] (-) TimerEvent: {}
+[12.927864] (robot_simulation) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[12.939614] (robot_simulation) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[12.945519] (-) TimerEvent: {}
+[13.045988] (-) TimerEvent: {}
+[13.146370] (-) TimerEvent: {}
+[13.246747] (-) TimerEvent: {}
+[13.347149] (-) TimerEvent: {}
+[13.447688] (-) TimerEvent: {}
+[13.548166] (-) TimerEvent: {}
+[13.616317] (robot_simulation) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[13.622540] (robot_simulation) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[13.648274] (-) TimerEvent: {}
+[13.678299] (robot_simulation) StdoutLine: {'line': b'-- Found rclpy: 3.3.16 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[13.679975] (robot_simulation) StdoutLine: {'line': b'-- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[13.694708] (robot_simulation) StdoutLine: {'line': b'-- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[13.714111] (robot_simulation) StdoutLine: {'line': b'-- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[13.735388] (robot_simulation) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[13.748398] (-) TimerEvent: {}
+[13.848885] (-) TimerEvent: {}
+[13.949531] (-) TimerEvent: {}
+[14.049933] (-) TimerEvent: {}
+[14.150342] (-) TimerEvent: {}
+[14.188967] (robot_simulation) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[14.250428] (-) TimerEvent: {}
+[14.350832] (-) TimerEvent: {}
+[14.451238] (-) TimerEvent: {}
+[14.551658] (-) TimerEvent: {}
+[14.632310] (robot_simulation) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[14.651724] (-) TimerEvent: {}
+[14.752109] (-) TimerEvent: {}
+[14.852467] (-) TimerEvent: {}
+[14.952878] (-) TimerEvent: {}
+[15.053410] (-) TimerEvent: {}
+[15.153819] (-) TimerEvent: {}
+[15.254219] (-) TimerEvent: {}
+[15.354587] (-) TimerEvent: {}
+[15.454999] (-) TimerEvent: {}
+[15.555403] (-) TimerEvent: {}
+[15.655823] (-) TimerEvent: {}
+[15.756262] (-) TimerEvent: {}
+[15.856805] (-) TimerEvent: {}
+[15.957330] (-) TimerEvent: {}
+[16.057799] (-) TimerEvent: {}
+[16.158156] (-) TimerEvent: {}
+[16.258590] (-) TimerEvent: {}
+[16.358971] (-) TimerEvent: {}
+[16.459344] (-) TimerEvent: {}
+[16.559775] (-) TimerEvent: {}
+[16.660194] (-) TimerEvent: {}
+[16.760685] (-) TimerEvent: {}
+[16.861113] (-) TimerEvent: {}
+[16.961539] (-) TimerEvent: {}
+[17.024678] (robot_simulation) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[17.061596] (-) TimerEvent: {}
+[17.161930] (-) TimerEvent: {}
+[17.262323] (-) TimerEvent: {}
+[17.305979] (robot_simulation) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[17.362385] (-) TimerEvent: {}
+[17.449749] (robot_simulation) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[17.462466] (-) TimerEvent: {}
+[17.562808] (-) TimerEvent: {}
+[17.663189] (-) TimerEvent: {}
+[17.763606] (-) TimerEvent: {}
+[17.864012] (-) TimerEvent: {}
+[17.964461] (-) TimerEvent: {}
+[18.064869] (-) TimerEvent: {}
+[18.165326] (-) TimerEvent: {}
+[18.265743] (-) TimerEvent: {}
+[18.366120] (-) TimerEvent: {}
+[18.466534] (-) TimerEvent: {}
+[18.566941] (-) TimerEvent: {}
+[18.667355] (-) TimerEvent: {}
+[18.699652] (robot_simulation) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[18.767459] (-) TimerEvent: {}
+[18.841594] (robot_simulation) StdoutLine: {'line': b'-- Configuring done\n'}
+[18.867560] (-) TimerEvent: {}
+[18.968101] (-) TimerEvent: {}
+[19.068533] (-) TimerEvent: {}
+[19.169300] (-) TimerEvent: {}
+[19.269769] (-) TimerEvent: {}
+[19.309488] (robot_simulation) StdoutLine: {'line': b'-- Generating done\n'}
+[19.370169] (-) TimerEvent: {}
+[19.471182] (-) TimerEvent: {}
+[19.572242] (-) TimerEvent: {}
+[19.601334] (robot_simulation) StdoutLine: {'line': b'-- Build files have been written to: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/build/robot_simulation\n'}
+[19.612575] (robot_simulation) CommandEnded: {'returncode': 0}
+[19.618150] (robot_simulation) JobProgress: {'identifier': 'robot_simulation', 'progress': 'build'}
+[19.623925] (robot_simulation) Command: {'cmd': ['/usr/bin/cmake', '--build', '/mnt/c/Users/abhij/Desktop/Robotics/robot_ws/build/robot_simulation', '--', '-j32', '-l32'], 'cwd': '/mnt/c/Users/abhij/Desktop/Robotics/robot_ws/build/robot_simulation', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'abhi'), ('GIT_ASKPASS', '/home/abhi/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/abhi'), ('OLDPWD', '/mnt/c/Users/abhij/Desktop/Robotics'), ('TERM_PROGRAM_VERSION', '1.100.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-8077f13a-7cb0-4030-8f6b-4cd72b9a11e6.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/abhi/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/abhi/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'abhi'), ('NAME', 'MATRIX'), ('WSL_INTEROP', '/run/WSL/620_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/abhi/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Users/abhij/AppData/Local/Programs/Python/Python313/Scripts/:/mnt/c/Users/abhij/AppData/Local/Programs/Python/Python313/:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.6/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.6/libnvvp:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2024.3.2/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/cloudflared/:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Users/abhij/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/abhij/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/abhij/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/abhij/anaconda3:/mnt/c/Users/abhij/anaconda3/Scripts:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.x/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.x/libnvvp:/mnt/c/other/tree-1.5.2.2-bin/bin/tree.exe:/mnt/c/Users/abhij/AppData/Local/Programs/Ollama:/mnt/c/Users/abhij/AppData/Local/Programs/Ollama/ollama.exe:/mnt/c/Program Files/LibreOffice/program:/mnt/c/Program Files/JetBrains/IntelliJ IDEA 2024.3.2.2/bin:/mnt/c/other/jdk-23.0.1/bin:/mnt/c/other/ngrok-v3-stable-windows-amd64:/mnt/c/other/ffmpeg/bin:/mnt/c/Users/abhij/AppData/Roaming/npm:/mnt/c/Users/abhij/AppData/Local/Programs/cursor/resources/app/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-6e8329260e.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/mnt/c/Users/abhij/Desktop/Robotics/robot_ws/build/robot_simulation'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[19.672480] (-) TimerEvent: {}
+[19.773066] (-) TimerEvent: {}
+[19.823046] (robot_simulation) StdoutLine: {'line': b'Built target ament_cmake_python_symlink_robot_simulation\n'}
+[19.823827] (robot_simulation) StdoutLine: {'line': b'Built target ament_cmake_python_symlink_robot_simulation_setup\n'}
+[19.873247] (-) TimerEvent: {}
+[19.974280] (-) TimerEvent: {}
+[20.074902] (-) TimerEvent: {}
+[20.129458] (robot_simulation) StdoutLine: {'line': b'running egg_info\n'}
+[20.130810] (robot_simulation) StdoutLine: {'line': b'creating robot_simulation.egg-info\n'}
+[20.132945] (robot_simulation) StdoutLine: {'line': b'writing robot_simulation.egg-info/PKG-INFO\n'}
+[20.137593] (robot_simulation) StdoutLine: {'line': b'writing dependency_links to robot_simulation.egg-info/dependency_links.txt\n'}
+[20.144857] (robot_simulation) StdoutLine: {'line': b'writing top-level names to robot_simulation.egg-info/top_level.txt\n'}
+[20.149685] (robot_simulation) StdoutLine: {'line': b"writing manifest file 'robot_simulation.egg-info/SOURCES.txt'\n"}
+[20.175136] (-) TimerEvent: {}
+[20.187408] (robot_simulation) StdoutLine: {'line': b"reading manifest file 'robot_simulation.egg-info/SOURCES.txt'\n"}
+[20.220489] (robot_simulation) StdoutLine: {'line': b"writing manifest file 'robot_simulation.egg-info/SOURCES.txt'\n"}
+[20.250022] (robot_simulation) StdoutLine: {'line': b'Built target ament_cmake_python_build_robot_simulation_egg\n'}
+[20.263783] (robot_simulation) CommandEnded: {'returncode': 0}
+[20.275261] (-) TimerEvent: {}
+[20.283517] (robot_simulation) JobProgress: {'identifier': 'robot_simulation', 'progress': 'install'}
+[20.297666] (robot_simulation) Command: {'cmd': ['/usr/bin/cmake', '--install', '/mnt/c/Users/abhij/Desktop/Robotics/robot_ws/build/robot_simulation'], 'cwd': '/mnt/c/Users/abhij/Desktop/Robotics/robot_ws/build/robot_simulation', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'abhi'), ('GIT_ASKPASS', '/home/abhi/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/abhi'), ('OLDPWD', '/mnt/c/Users/abhij/Desktop/Robotics'), ('TERM_PROGRAM_VERSION', '1.100.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-8077f13a-7cb0-4030-8f6b-4cd72b9a11e6.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/abhi/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/abhi/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'abhi'), ('NAME', 'MATRIX'), ('WSL_INTEROP', '/run/WSL/620_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/abhi/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Users/abhij/AppData/Local/Programs/Python/Python313/Scripts/:/mnt/c/Users/abhij/AppData/Local/Programs/Python/Python313/:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.6/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.6/libnvvp:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2024.3.2/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/cloudflared/:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Users/abhij/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/abhij/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/abhij/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/abhij/anaconda3:/mnt/c/Users/abhij/anaconda3/Scripts:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.x/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.x/libnvvp:/mnt/c/other/tree-1.5.2.2-bin/bin/tree.exe:/mnt/c/Users/abhij/AppData/Local/Programs/Ollama:/mnt/c/Users/abhij/AppData/Local/Programs/Ollama/ollama.exe:/mnt/c/Program Files/LibreOffice/program:/mnt/c/Program Files/JetBrains/IntelliJ IDEA 2024.3.2.2/bin:/mnt/c/other/jdk-23.0.1/bin:/mnt/c/other/ngrok-v3-stable-windows-amd64:/mnt/c/other/ffmpeg/bin:/mnt/c/Users/abhij/AppData/Roaming/npm:/mnt/c/Users/abhij/AppData/Local/Programs/cursor/resources/app/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-6e8329260e.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/mnt/c/Users/abhij/Desktop/Robotics/robot_ws/build/robot_simulation'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[20.309574] (robot_simulation) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[20.320230] (robot_simulation) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[20.341013] (robot_simulation) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/robot_simulation/environment/pythonpath.sh\n'}
+[20.375590] (-) TimerEvent: {}
+[20.386261] (robot_simulation) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/robot_simulation/environment/pythonpath.dsv\n'}
+[20.476266] (-) TimerEvent: {}
+[20.480989] (robot_simulation) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/local/lib/python3.10/dist-packages/robot_simulation-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[20.538373] (robot_simulation) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/local/lib/python3.10/dist-packages/robot_simulation-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[20.576621] (-) TimerEvent: {}
+[20.596266] (robot_simulation) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/local/lib/python3.10/dist-packages/robot_simulation-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[20.654527] (robot_simulation) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/local/lib/python3.10/dist-packages/robot_simulation-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[20.676781] (-) TimerEvent: {}
+[20.769936] (robot_simulation) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/local/lib/python3.10/dist-packages/robot_simulation/__init__.py\n'}
+[20.776907] (-) TimerEvent: {}
+[20.830283] (robot_simulation) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/lib/robot_simulation/teleop_keyboard.py\n'}
+[20.869693] (robot_simulation) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/lib/robot_simulation/robot_monitor.py\n'}
+[20.877038] (-) TimerEvent: {}
+[20.945719] (robot_simulation) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/robot_simulation//launch/bridge_only.launch.py\n'}
+[20.977345] (-) TimerEvent: {}
+[20.991115] (robot_simulation) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/robot_simulation//launch/robot_simulation.launch.py\n'}
+[21.036993] (robot_simulation) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/robot_simulation//launch/robot_spawn.launch.py\n'}
+[21.077470] (-) TimerEvent: {}
+[21.111656] (robot_simulation) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/robot_simulation//config/bridge_config.yaml\n'}
+[21.156788] (robot_simulation) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/robot_simulation//config/robot_params.yaml\n'}
+[21.177572] (-) TimerEvent: {}
+[21.227011] (robot_simulation) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/robot_simulation//worlds/test_world.sdf\n'}
+[21.277727] (-) TimerEvent: {}
+[21.321764] (robot_simulation) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/robot_simulation//models/robot/model.config\n'}
+[21.376248] (robot_simulation) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/robot_simulation//models/robot/model.sdf\n'}
+[21.377816] (-) TimerEvent: {}
+[21.443137] (robot_simulation) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/ament_index/resource_index/packages/robot_simulation\n'}
+[21.478143] (-) TimerEvent: {}
+[21.493967] (robot_simulation) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/robot_simulation/package.xml\n'}
+[21.554098] (robot_simulation) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/ament_index/resource_index/package_run_dependencies/robot_simulation\n'}
+[21.578401] (-) TimerEvent: {}
+[21.625267] (robot_simulation) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/ament_index/resource_index/parent_prefix_path/robot_simulation\n'}
+[21.675854] (robot_simulation) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/robot_simulation/environment/ament_prefix_path.sh\n'}
+[21.678499] (-) TimerEvent: {}
+[21.721025] (robot_simulation) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/robot_simulation/environment/ament_prefix_path.dsv\n'}
+[21.764328] (robot_simulation) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/robot_simulation/environment/path.sh\n'}
+[21.778704] (-) TimerEvent: {}
+[21.810250] (robot_simulation) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/robot_simulation/environment/path.dsv\n'}
+[21.853874] (robot_simulation) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/robot_simulation/local_setup.bash\n'}
+[21.878950] (-) TimerEvent: {}
+[21.894712] (robot_simulation) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/robot_simulation/local_setup.sh\n'}
+[21.934117] (robot_simulation) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/robot_simulation/local_setup.zsh\n'}
+[21.974538] (robot_simulation) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/robot_simulation/local_setup.dsv\n'}
+[21.979056] (-) TimerEvent: {}
+[22.014991] (robot_simulation) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/robot_simulation/package.dsv\n'}
+[22.079422] (-) TimerEvent: {}
+[22.100270] (robot_simulation) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/ament_index/resource_index/packages/robot_simulation\n'}
+[22.179756] (-) TimerEvent: {}
+[22.183191] (robot_simulation) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/robot_simulation/cmake/robot_simulationConfig.cmake\n'}
+[22.227817] (robot_simulation) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/robot_simulation/cmake/robot_simulationConfig-version.cmake\n'}
+[22.280205] (-) TimerEvent: {}
+[22.292406] (robot_simulation) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/robot_simulation/package.xml\n'}
+[22.379674] (robot_simulation) StdoutLine: {'line': b"Listing '/mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/local/lib/python3.10/dist-packages/robot_simulation'...\n"}
+[22.380500] (-) TimerEvent: {}
+[22.380747] (robot_simulation) StdoutLine: {'line': b"Compiling '/mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/local/lib/python3.10/dist-packages/robot_simulation/__init__.py'...\n"}
+[22.381384] (robot_simulation) StdoutLine: {'line': b'***   File "/mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/local/lib/python3.10/dist-packages/robot_simulation/__init__.py", line 1\n'}
+[22.381979] (robot_simulation) StdoutLine: {'line': b'    echo \'"""Robot simulation package for dual LiDAR robot with camera."""\n'}
+[22.382569] (robot_simulation) StdoutLine: {'line': b'         ^\n'}
+[22.383153] (robot_simulation) StdoutLine: {'line': b'SyntaxError: unterminated string literal (detected at line 1)\n'}
+[22.383912] (robot_simulation) StdoutLine: {'line': b'\n'}
+[22.388276] (robot_simulation) CommandEnded: {'returncode': 0}
+[22.481026] (-) TimerEvent: {}
+[22.581988] (-) TimerEvent: {}
+[22.696981] (-) TimerEvent: {}
+[22.797370] (-) TimerEvent: {}
+[22.897737] (-) TimerEvent: {}
+[22.998118] (-) TimerEvent: {}
+[23.113438] (-) TimerEvent: {}
+[23.217461] (-) TimerEvent: {}
+[23.317884] (-) TimerEvent: {}
+[23.368608] (robot_simulation) JobEnded: {'identifier': 'robot_simulation', 'rc': 0}
+[23.376351] (-) EventReactorShutdown: {}

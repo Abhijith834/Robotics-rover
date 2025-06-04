@@ -1,1 +1,1 @@
-robot_state_publisher;ros_gz_sim;ros_gz_bridge;std_msgs;geometry_msgs;sensor_msgs;tf2;tf2_ros;launch;launch_ros;xacro;diagnostic_updater;ament_lint_auto;ament_lint_common
+rclpy;rclcpp;robot_state_publisher;joint_state_publisher;joint_state_publisher_gui;ros_ign_bridge;ros_ign_gazebo;ros_ign_interfaces;std_msgs;geometry_msgs;sensor_msgs;nav_msgs;tf2;tf2_ros;launch;launch_ros;xacro;teleop_twist_keyboard;rviz2;ament_lint_auto;ament_lint_common

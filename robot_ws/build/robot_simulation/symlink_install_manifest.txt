@@ -7,8 +7,15 @@
 /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/local/lib/python3.10/dist-packages/robot_simulation/__init__.py
 /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/lib/robot_simulation/teleop_keyboard.py
 /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/lib/robot_simulation/robot_monitor.py
-/mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/robot_simulation/models/robot/model.config
-/mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/robot_simulation/models/robot/model.sdf
+/mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/robot_simulation//launch/bridge_only.launch.py
+/mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/robot_simulation//launch/robot_simulation.launch.py
+/mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/robot_simulation//launch/robot_spawn.launch.py
+/mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/robot_simulation//config/bridge_config.yaml
+/mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/robot_simulation//config/robot_params.yaml
+/mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/robot_simulation//worlds/test_world.sdf
+/mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/robot_simulation//models/robot/model.config
+/mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/robot_simulation//models/robot/model.sdf
+/mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/ament_index/resource_index/packages/robot_simulation
 /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/robot_simulation/package.xml
 /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/ament_index/resource_index/package_run_dependencies/robot_simulation
 /mnt/c/Users/abhij/Desktop/Robotics/robot_ws/install/robot_simulation/share/ament_index/resource_index/parent_prefix_path/robot_simulation

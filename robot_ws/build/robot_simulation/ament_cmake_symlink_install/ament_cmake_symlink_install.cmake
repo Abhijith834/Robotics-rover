@@ -325,8 +325,20 @@ ament_cmake_symlink_install_directory("/mnt/c/Users/abhij/Desktop/Robotics/robot
 # install(PROGRAMS "scripts/teleop_keyboard.py" "scripts/robot_monitor.py" "DESTINATION" "lib/robot_simulation")
 ament_cmake_symlink_install_programs("/mnt/c/Users/abhij/Desktop/Robotics/robot_ws/src/robot_simulation" PROGRAMS "scripts/teleop_keyboard.py" "scripts/robot_monitor.py" "DESTINATION" "lib/robot_simulation")
 
-# install(DIRECTORY "models/" "DESTINATION" "share/robot_simulation/models")
-ament_cmake_symlink_install_directory("/mnt/c/Users/abhij/Desktop/Robotics/robot_ws/src/robot_simulation" DIRECTORY "models/" "DESTINATION" "share/robot_simulation/models")
+# install(DIRECTORY "launch" "DESTINATION" "share/robot_simulation/")
+ament_cmake_symlink_install_directory("/mnt/c/Users/abhij/Desktop/Robotics/robot_ws/src/robot_simulation" DIRECTORY "launch" "DESTINATION" "share/robot_simulation/")
+
+# install(DIRECTORY "config" "DESTINATION" "share/robot_simulation/")
+ament_cmake_symlink_install_directory("/mnt/c/Users/abhij/Desktop/Robotics/robot_ws/src/robot_simulation" DIRECTORY "config" "DESTINATION" "share/robot_simulation/")
+
+# install(DIRECTORY "worlds" "DESTINATION" "share/robot_simulation/")
+ament_cmake_symlink_install_directory("/mnt/c/Users/abhij/Desktop/Robotics/robot_ws/src/robot_simulation" DIRECTORY "worlds" "DESTINATION" "share/robot_simulation/")
+
+# install(DIRECTORY "models" "DESTINATION" "share/robot_simulation/")
+ament_cmake_symlink_install_directory("/mnt/c/Users/abhij/Desktop/Robotics/robot_ws/src/robot_simulation" DIRECTORY "models" "DESTINATION" "share/robot_simulation/")
+
+# install(FILES "resource/robot_simulation" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/mnt/c/Users/abhij/Desktop/Robotics/robot_ws/src/robot_simulation" FILES "resource/robot_simulation" "DESTINATION" "share/ament_index/resource_index/packages")
 
 # install(FILES "package.xml" "DESTINATION" "share/robot_simulation")
 ament_cmake_symlink_install_files("/mnt/c/Users/abhij/Desktop/Robotics/robot_ws/src/robot_simulation" FILES "package.xml" "DESTINATION" "share/robot_simulation")

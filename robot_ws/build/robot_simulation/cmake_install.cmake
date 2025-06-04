@@ -54,18 +54,6 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       )
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robot_simulation/launch" TYPE DIRECTORY FILES "/mnt/c/Users/abhij/Desktop/Robotics/robot_ws/src/robot_simulation/launch/" FILES_MATCHING REGEX "/[^/]*\\.launch\\.py$")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robot_simulation/config" TYPE DIRECTORY FILES "/mnt/c/Users/abhij/Desktop/Robotics/robot_ws/src/robot_simulation/config/" FILES_MATCHING REGEX "/[^/]*\\.yaml$")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robot_simulation/worlds" TYPE DIRECTORY FILES "/mnt/c/Users/abhij/Desktop/Robotics/robot_ws/src/robot_simulation/worlds/" FILES_MATCHING REGEX "/[^/]*\\.sdf$")
-endif()
-
 if(CMAKE_INSTALL_COMPONENT)
   set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
 else()
