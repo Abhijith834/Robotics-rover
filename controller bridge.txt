@@ -1,0 +1,35 @@
+controller bridge
+ros2 run ros_ign_bridge parameter_bridge   /
+cmd_vel@geometry_msgs/msg/Twist@ignition.msgs.Twist   /
+model/robot/cmd_vel@geometry_msgs/msg/Twist@ignition.msgs.Twist
+
+lidar bridge
+ros2 run ros_ign_bridge parameter_bridge/
+lidar_front@sensor_msgs/msg/LaserScan@ignition.msgs.LaserScan/
+lidar_back@sensor_msgs/msg/LaserScan@ignition.msgs.LaserScan
+
+lidar publisher
+ros2 run tf2_ros static_transform_publisher 0 0 0 0 0 0 map robot/link/lidar_front & ros2 run tf2_ros static_transform_publisher 0 0 0 0 0 0 map robot/link/lidar_back
+
+camera bridge
+ros2 run ros_ign_bridge parameter_bridge   /world/test_world/model/robot/model/camera/link/link/sensor/camera/image@sensor_msgs/msg/Image@ignition.msgs.Image   /world/test_world/model/robot/model/camera/link/link/sensor/camera/camera_info@sensor_msgs/msg/CameraInfo@ignition.msgs.CameraInfo
+
+keyboard control
+ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args --remap cmd_vel:=/cmd_vel
+
+inital setup
+chmod 700 /run/user/1000
+sudo usermod -aG video $USER
+export LIBGL_ALWAYS_SOFTWARE=1
+source /opt/ros/humble/setup.bash
+
+
+colcon build --packages-select robot_simulation
+source install/setup.bash
+
+
+# Launch simulation with teleop enabled
+ros2 launch robot_simulation robot_simulation.launch.py teleop:=true
+
+# Or launch without teleop (manual start)
+ros2 launch robot_simulation robot_simulation.launch.py teleop:=false

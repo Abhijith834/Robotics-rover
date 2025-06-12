@@ -1,0 +1,13 @@
+scan_merger:
+  ros__parameters:
+    use_sim_time: true
+    destination_frame: base_link
+    cloud_destination_topic: /merged_cloud
+    scan_destination_topic: /merged_scan
+    laserscan_topics: ["/lidar_front/scan", "/lidar_back/scan"]
+    angle_min: -3.14159
+    angle_max: 3.14159
+    angle_increment: 0.00982
+    scan_time: 0.1
+    range_min: 0.08
+    range_max: 10.0
