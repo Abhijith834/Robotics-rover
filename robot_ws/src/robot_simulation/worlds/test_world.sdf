@@ -2,7 +2,7 @@
 <sdf version="1.7">
   <world name="test_world">
     <include>
-      <uri>file:///mnt/c/Users/abhij/Desktop/Robotics/models/robot/model.sdf</uri>
+      <uri>file:///mnt/c/Users/abhij/Desktop/Robotics/robot_ws/src/robot_simulation/models/robot/model.sdf</uri>
       <pose>0 0 0.5 0 0 90</pose>
     </include>
     <include>
