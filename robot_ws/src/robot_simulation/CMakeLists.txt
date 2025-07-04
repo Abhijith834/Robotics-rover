@@ -5,7 +5,7 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
-# Find dependencies - only CMake packages that provide config files
+# Find dependencies - only packages that provide CMake config files
 find_package(ament_cmake REQUIRED)
 find_package(ament_cmake_python REQUIRED)
 find_package(rclcpp REQUIRED)
@@ -48,18 +48,6 @@ install(DIRECTORY
 install(DIRECTORY
   models
   DESTINATION share/${PROJECT_NAME}/
-)
-
-# Install resource files
-install(FILES
-  resource/${PROJECT_NAME}
-  DESTINATION share/ament_index/resource_index/packages
-)
-
-# Install package.xml
-install(FILES
-  package.xml
-  DESTINATION share/${PROJECT_NAME}
 )
 
 if(BUILD_TESTING)

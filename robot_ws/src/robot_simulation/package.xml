@@ -20,12 +20,10 @@
   <build_depend>robot_state_publisher</build_depend>
   <exec_depend>robot_state_publisher</exec_depend>
   <exec_depend>joint_state_publisher</exec_depend>
-  <exec_depend>joint_state_publisher_gui</exec_depend>
 
   <!-- Gazebo and Bridge Dependencies -->
-  <exec_depend>ros_ign_bridge</exec_depend>
-  <exec_depend>ros_ign_gazebo</exec_depend>
-  <exec_depend>ros_ign_interfaces</exec_depend>
+  <exec_depend>ros_gz_bridge</exec_depend>
+  <exec_depend>ros_gz_sim</exec_depend>
 
   <!-- Message Dependencies -->
   <build_depend>std_msgs</build_depend>
@@ -45,13 +43,15 @@
   <!-- Launch Dependencies -->
   <exec_depend>launch</exec_depend>
   <exec_depend>launch_ros</exec_depend>
-  <exec_depend>xacro</exec_depend>
 
   <!-- Teleop Dependencies -->
   <exec_depend>teleop_twist_keyboard</exec_depend>
 
   <!-- Visualization -->
   <exec_depend>rviz2</exec_depend>
+
+  <!-- SLAM Dependencies -->
+  <exec_depend>slam_toolbox</exec_depend>
 
   <!-- Test Dependencies -->
   <test_depend>ament_lint_auto</test_depend>
