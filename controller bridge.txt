@@ -1,4 +1,4 @@
-bridge codes for terminal 
+bridge codes for terminal. Run each contoller in each bridge
 
 controller bridge
 ros2 run ros_ign_bridge parameter_bridge   /
